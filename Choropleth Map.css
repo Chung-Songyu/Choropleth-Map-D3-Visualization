@@ -1,0 +1,67 @@
+body {
+  font-family: 'Crimson Text', serif;
+  background-color: rgba(215, 255, 225, 0.1);
+  color: rgba(70, 55, 5, 1);
+  font-size: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#title {
+  margin: 10px 0px 0px 0px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+#description {
+  margin: 0px 0px 20px 0px;
+  font-weight: bold;
+}
+
+#container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#tooltip {
+  position: absolute;
+  font-size: 18px;
+  background-color: rgba(240, 240, 240, 1);
+  padding: 5px 10px 5px 10px;
+  box-shadow: 0 9px 19px rgba(0,0,0,0.30), 0 5px 5px rgba(0,0,0,0.34);
+  border-radius: 5px;
+  white-space: nowrap;
+}
+
+.hidden {
+  display: none;
+}
+
+#legend-svg {
+  margin: 20px 0px 0px 0px;
+}
+
+#legend-x-axis {
+  font-size: 12px;
+}
+
+.selected {
+  fill: red !important;
+  stroke: black;
+}
+
+#source {
+  margin: 10px 0px 20px 0px;
+  font-size: 16px;
+}
+
+@media (min-width: 320px) and (max-width: 1000px) {
+  body {
+    height: 850px;
+    width: 1000px;
+  }
+}
